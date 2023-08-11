@@ -73,15 +73,19 @@
             background-color: #FFE8CC;
             /* Light orange background */
             border-left: 4px solid #E50914;
-            /* Netflix red color for the left border */
-            padding: 15px;
             margin-bottom: 20px;
         }
 
+        .experience .experience-body {
+            padding: 0 15px;
+        }
+
         .experience h3 {
+            background-color: #E50914;
+            color: #FFF;
+            padding: 10px;
             font-size: 24px;
-            color: #E50914;
-            margin-bottom: 5px;
+            margin-bottom: 10px;
         }
 
         .experience .date {
@@ -128,16 +132,22 @@
 
         .education {
             border-left: 4px solid #E50914;
-            /* Netflix red color for the left border */
-            padding-left: 10px;
             margin-bottom: 15px;
+            background-color: #FFE8CC;
+        }
+
+        .education .education-body {
+            padding: 10px 15px;
         }
 
         .education .degree {
-            font-size: 24px;
-            font-weight: bold;
             color: #E50914;
             margin-bottom: 5px;
+            background-color: #E50914;
+            color: #FFF;
+            padding: 10px;
+            font-size: 24px;
+            margin-bottom: 10px;
         }
 
         .date,
@@ -158,9 +168,7 @@
 
         .skills h3 {
             background-color: #E50914;
-            /* Netflix red background for the skills headings */
             color: #FFF;
-            /* White text color for the skills headings */
             padding: 10px;
             font-size: 24px;
             margin-bottom: 10px;
@@ -170,17 +178,18 @@
             list-style-type: none;
             padding: 0;
             margin: 0;
+            display: flex;
+            flex-wrap: wrap;
         }
 
         .skills li {
             background-color: #FFE8CC;
-            /* Light orange background for the individual skills */
             padding: 8px 15px;
-            margin-bottom: 5px;
-            border-radius: 5px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            border-radius: 50px;
             font-size: 16px;
             color: #555;
-            /* Dark gray text color for the individual skills */
         }
     </style>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
@@ -226,84 +235,98 @@
     <div class="section">
         <h2>Experience</h2>
         <div class="experience">
-            <h3>Senior Software Engineer | Digilant - Boston, MA, USA</h3>
-            <div class="date">May 2022 – Present</div>
-            <div class="location"><i class="far fa-building icon"></i> ISPD Global Team</div>
-            <p>
-                <i class="fas fa-check-circle icon"></i> Optimized Sidekiq jobs to process gigabytes of data from S3
-                to improve customers' daily reports.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Provided solutions using Semrush to measure the quality and
-                quantity of a brand's memory associations that exist in a consumer's mind.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Migrated multi-model database into a single view and
-                automated manual processes to reduce human errors.
-            </p>
+            <h3>Senior Software Engineer | Digilant</h3>
+            <div class="experience-body">
+                <div class="date">May 2022 – Present</div>
+                <div class="location"><i class="far fa-building icon"></i> ISPD Global Team - Boston, MA, US</div>
+                <p>
+                    <i class="fas fa-check-circle icon"></i> Optimized Sidekiq jobs to process gigabytes of data from S3
+                    to improve customers' daily reports.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Provided solutions using Semrush to measure the quality and
+                    quantity of a brand's memory associations that exist in a consumer's mind.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Migrated multi-model database into a single view and
+                    automated manual processes to reduce human errors.
+                </p>
+            </div>
         </div>
 
         <div class="experience">
-            <h3>Data Platform Engineer | FREE NOW (MyTaxi) - Hamburg, Germany</h3>
-            <div class="date">Jan 2022 – May 2022</div>
-            <div class="location"><i class="far fa-building icon"></i> Data Platform Team</div>
-            <p>
-                <i class="fas fa-check-circle icon"></i> Improved Presto cluster deployment and created slim Docker
-                images for frequent deployment on AWS.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Developed a monitoring system using Databricks Overwatch to
-                monitor clusters and their cost run by Airflow.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Implemented Airflow Operators library to be able to create
-                semantic versions for airflow clusters.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Developed a Rule engine to configure IAM roles from Ranger
-                S3 policies to improve Databricks S3 access using Meta profile.
-            </p>
+            <h3>Data Platform Engineer | FREE NOW (MyTaxi)</h3>
+            <div class="experience-body">
+                <div class="date">Jan 2022 – May 2022</div>
+                <div class="location"><i class="far fa-building icon"></i> Data Platform Team - Hamburg, Germany</div>
+                <p>
+                    <i class="fas fa-check-circle icon"></i> Improved Presto cluster deployment and created slim Docker
+                    images for frequent deployment on AWS.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Developed a monitoring system using Databricks Overwatch to
+                    monitor clusters and their cost run by Airflow.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Implemented Airflow Operators library to be able to create
+                    semantic versions for airflow clusters.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Developed a Rule engine to configure IAM roles from Ranger
+                    S3 policies to improve Databricks S3 access using Meta profile.
+                </p>
+            </div>
         </div>
         <div class="experience">
-            <h3>Associate - Projects | Cognizant Technology Solutions - Singapore</h3>
-            <div class="date">Oct 2019 – Jan 2022</div>
-            <div class="location"><i class="far fa-building icon"></i> Digital Engineering Team</div>
-            <p>
-                <i class="fas fa-check-circle icon"></i> Built robust microservices for customers to consume T24 and
-                GraphQL services for a corporate-action
-                project on Spring Boot.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Designed and implemented a DSL engine, reducing server load by
-                30% during DB2 data migration for
-                banking clients.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Containerized payment application and automated GitLab CI/CD
-                pipeline, ensuring seamless migration to
-                Open-Shift using Helm.
-            </p>
+            <h3>Associate - Projects | Cognizant Technology Solutions</h3>
+            <div class="experience-body">
+                <div class="date">Oct 2019 – Jan 2022</div>
+                <div class="location"><i class="far fa-building icon"></i> Digital Engineering Team - Singapore</div>
+                <p>
+                    <i class="fas fa-check-circle icon"></i> Built robust microservices for customers to consume T24 and
+                    GraphQL services for a corporate-action
+                    project on Spring Boot.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Designed and implemented a DSL engine, reducing server load
+                    by
+                    30% during DB2 data migration for
+                    banking clients.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Containerized payment application and automated GitLab
+                    CI/CD
+                    pipeline, ensuring seamless migration to
+                    Open-Shift using Helm.
+                </p>
+            </div>
         </div>
 
         <div class="experience">
-            <h3>Front-End Developer | Finterra Technologies Sdn Bhd - Margate, FL, USA</h3>
-            <div class="date">Nov 2017 – Oct 2019</div>
-            <div class="location"><i class="far fa-building icon"></i> Ecosystem Team - Kuala Lumpur, Malaysia</div>
-            <p>
-                <i class="fas fa-check-circle icon"></i> Spearheaded the Crypto-Exchange project using Ruby on Rails and
-                distributed technology for efficient
-                P2P token transfer.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Revamped crowdfunding portal, significantly reducing initial
-                load time through innovative lazy loading
-                on Angular.
-                <br>
-                <i class="fas fa-check-circle icon"></i> Designed microservice architecture and automated CI/CD pipeline
-                on AWS using EB, ECS, and EKS.
-            </p>
+            <h3>Front-End Developer | Finterra Technologies Sdn Bhd</h3>
+            <div class="experience-body">
+                <div class="date">Nov 2017 – Oct 2019</div>
+                <div class="location"><i class="far fa-building icon"></i> Ecosystem Team - Kuala Lumpur, Malaysia</div>
+                <p>
+                    <i class="fas fa-check-circle icon"></i> Spearheaded the Crypto-Exchange project using Ruby on Rails
+                    and
+                    distributed technology for efficient
+                    P2P token transfer.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Revamped crowdfunding portal, significantly reducing
+                    initial
+                    load time through innovative lazy loading
+                    on Angular.
+                    <br>
+                    <i class="fas fa-check-circle icon"></i> Designed microservice architecture and automated CI/CD
+                    pipeline
+                    on AWS using EB, ECS, and EKS.
+                </p>
+            </div>
         </div>
     </div>
     <div class="section">
         <h2>Education</h2>
-
         <div class="education">
             <div class="degree">Bachelor of Science in Computer Science | Asia Pacific University of Technology and
                 Innovation</div>
-            <div class="date">2015 – 2018</div>
-            <div class="location">Kuala Lumpur, Malaysia</div>
+            <div class="education-body">
+                <div class="date">2015 – 2018</div>
+                <div class="location">Kuala Lumpur, Malaysia</div>
+            </div>
         </div>
     </div>
 
